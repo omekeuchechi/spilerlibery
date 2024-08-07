@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Open Sans';
+    background: url(/asset/img/360_F_693302998_phZ8La05ESbGiwvD8qwit9wQgOPZdwkV.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+/* ===================================nav========================================= */
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+.nav .logo{
+    font-size: 3rem;
+    color: #fff;
+}
+.nav .logo .logo-name{
+    font-weight: bold;
+    color: #f8312f;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.nav .logo .logo-name:hover{
+    color: #fa4b48e1;
+}
+ul{
+    display: inline-flex;
+    gap: 30px;
+    list-style: none;
+}
+ul li a{
+    color: red;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+ul li a:hover, ul li a::after{
+    color: white;
+    content: '';
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+}
+ul li a::after{
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: 5px solid white;
+    transition: all 0.3s ease;
+}
+ul li a:hover::after{
+    width: 100%
+}
+.Download{
+    background: #f8312f;
+    color: #fff;
+    padding: 10px 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.8rem;
+    -webkit-text-stroke: 0.7px blue;
+}
+
+.Download:hover{
+    background-color: #f52a2a;
+}
+.signIn{
+    background: #fff;
+    color: #f8312f;
+    padding: 10px 80px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.8rem;
+    -webkit-text-stroke: 0.7px blue;
+}
+
+.signIn:hover{
+    background-color: #f5f5f5;
+}
