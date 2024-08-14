@@ -51,17 +51,17 @@ body{
 .nav .logo .logo-name:hover{
     color: #fa4b48e1;
 }
-ul{
+.ul{
     display: inline-flex;
     gap: 30px;
     list-style: none;
 }
-ul li a{
+.ul .li .a{
     color: red;
     font-size: 1.6rem;
     text-decoration: none;
 }
-ul li a:hover, ul li a::after{
+.ul .li .a:hover, ul li .a::after{
     color: white;
     content: '';
     display: block;
@@ -83,13 +83,13 @@ ul li a:hover, ul li a::after{
         color: #f52a2a;
     }
 }
-ul li a::after{
+.ul .li a::after{
     width: 100%;
     margin-top: 20px;
     border-bottom: 5px solid white;
     /* transition: all 0.3s ease; */
 }
-ul li a:hover::after{
+.ul .li .a:hover::after{
     width: 100%
 }
 .Download{
@@ -411,10 +411,28 @@ ul li a:hover::after{
     top: 90%;
     /* width: 90vw; */
     padding: 10px 20px;
+    justify-content: center;
     /* margin-left: 30px; */
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+.glass-container:hover{
+    animation: floppy;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@keyframes floppy {
+    0%{
+        filter: brightness(0);
+    }
+    10%,50%,80%{
+        filter: blur(20px);
+    }
+    100%{
+        filter: blur(10px);
+    }
 }
 .glass-container .glass{
     width: 30%;
@@ -446,14 +464,46 @@ ul li a:hover::after{
 }
 .glass-container .glass3{
     display: flex;
+    padding: 20px 20px;
     flex-direction: column;
 }
 .glass-container .glass3 .icons{
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 .v2{
     color: #2cbed8;
     background: rgba(255, 255, 255, 0.4);
-    padding: 5px 5px;
+    padding: 20px 20px;
+    font-size: 2rem;
+    position: relative;
+    margin-top: 40px;
+    border-radius: 35px;
+    margin-left: 70px;
+}
+.glass-container .glass3 .cap{
+    /* padding: 20px 5px; */
+    text-align: center;
+    color: #2cbed8;
+}
+footer{
+    position: relative;
+    width: 100%;
+    top: 90vh;
+    height: auto;
+    padding: 50px 100px;
+    background: #141414;
+    border-radius: 10px;
+}
+footer .container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+footer .container .sec h2{
+    position: relative;
+    color: #2292bb;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
