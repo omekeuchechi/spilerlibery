@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>code-editor</title>
+    <link rel="stylesheet" href="/dist/css/codeeditor.css">
+    <link rel="stylesheet" href="/asset/5.65.17 source code/codemirror-codemirror5-b9dd976/lib/codemirror.css">
 </head>
 <body>
     
+    <div class="header">
+        <button id="run-btn">Run</button>
+    </div>
+    <div class="editor">
+        <div class="code">
+            <div class="html-code"></div>
+            <div class="css-code"></div>
+            <div class="js-code"></div>
+        </div>
+        <div class="preview">
+            <iframe id="preview-window"></iframe>
+        </div>
+    </div>
+
+    <script src="/asset/5.65.17 source code/codemirror-codemirror5-b9dd976/mode/xml/xml.js"></script>
+    <script src="/asset/5.65.17 source code/codemirror-codemirror5-b9dd976/mode/css/css.js"></script>
+    <script src="/asset/5.65.17 source code/codemirror-codemirror5-b9dd976/mode/javascript/javascript.js"></script>
+    <script src="/asset/5.65.17 source code/codemirror-codemirror5-b9dd976/src/codemirror.js"></script>
+    <!-- <script src="/asset/5.65.17 source code/codemirror-codemirror5-b9dd976/src/modes.js"></script> -->
+    <script src="/dist/js/codeeditor.js"></script>
 </body>
 </html>
